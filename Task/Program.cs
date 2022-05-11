@@ -6,8 +6,8 @@
     {
         if(arg[i].Length <= 3) 
         {
+            TempArray[size] = arg[i];
             size++;
-            TempArray[i] = arg[i];
         }
     }
     string[] newArr = new string[size];
@@ -18,7 +18,7 @@
     return newArr;
 }
 
-void PrintArray(int[] col)
+void PrintArray(string[] col)
 {
     int count = col.Length;
     for(int pos = 0; pos < count - 1; pos++)
@@ -28,6 +28,6 @@ void PrintArray(int[] col)
     Console.Write($"{col[count - 1]} ");
 }
 
-string[] array = {"hello", "2", "world", ":-)"};
-
+string[] array = {"hello", "2", "world", "^-^"};
 string[] array2 = NextArr(array);
+PrintArray(array2);
