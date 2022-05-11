@@ -16,4 +16,5 @@ string[] NextArr (string[] arg)
     {
         newArr[i] = TempArray[i];
     }
+    return newArr;
 }
