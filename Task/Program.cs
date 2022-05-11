@@ -11,4 +11,9 @@ string[] NextArr (string[] arg)
             TempArray[i] = arg[i];
         }
     }
+    string[] newArr = new string[size];
+    for(int i = 0; i < size; i++)
+    {
+        newArr[i] = TempArray[i];
+    }
 }
